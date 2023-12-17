@@ -7,6 +7,7 @@
 - All of my projects are available at [https://prestgg.tic.tc](https://prestgg.tic.tc)
 
 - 📫 How to reach me **prestgg56@gmail.com**
+![snake gif](https://github.com/Prestgg1/Prestgg1/blob/output/github-contribution-grid-snake.gif)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -31,4 +32,4 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=prestgg1&" alt="prestgg1" /></p>
 
-<div>![snake gif](https://github.com/Prestgg1/Prestgg1/blob/output/github-contribution-grid-snake.gif)</div>
+
