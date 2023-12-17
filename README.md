@@ -1,4 +1,4 @@
-: [![MasterHead](https://i.hizliresim.com/swpimun.png)
+:[![MasterHead](https://i.hizliresim.com/swpimun.png)
 <h1 align="center">Hi 👋, I'm Prestgg</h1>
 <h3 align="center">A passionate frontend developer from Azerbaijan</h3>
 
