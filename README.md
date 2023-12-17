@@ -32,5 +32,3 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=prestgg1&" alt="prestgg1" /></p>
 ![snake gif](https://github.com/Prestgg1/Prestgg1/blob/output/github-contribution-grid-snake.gif)
-<img align="center" style='weight=800px' src="https://github.com/Prestgg1/Prestgg1/blob/output/github-contribution-grid-snake.gif" alt="prestgg1" />
-
