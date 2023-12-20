@@ -8,6 +8,11 @@
 
 - 📫 How to reach me **prestgg56@gmail.com**
 
+<style>
+  a{
+    text-decoration: none;
+  }
+</style>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
