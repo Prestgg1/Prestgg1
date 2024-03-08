@@ -77,7 +77,7 @@
                                 enable: true,
                                 area: 800
                             },
-                            value: 50
+                            value: 25
                         },
                         opacity: {
                             value: 1
