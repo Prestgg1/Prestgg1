@@ -1,0 +1,37 @@
+{
+  "name": "prestgg",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "watch": "tailwindcss -i ./src/assets/base.css -o ./src/assets/style.css --watch",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.2.0",
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/font": "^7.4.47",
+    "@mdi/js": "^7.4.47",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "animate.css": "^4.1.1",
+    "emailjs": "^4.0.3",
+    "eslint": "^8.57.0",
+    "install": "^0.13.0",
+    "material-design-icons": "^3.0.1",
+    "route": "^0.2.5",
+    "tsparticles-slim": "^2.12.0",
+    "vue": "^3.4.19",
+    "vue-i18n": "9",
+    "vue-router": "4",
+    "vue3-particles": "^2.12.0",
+    "vuetify": "^3.5.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
