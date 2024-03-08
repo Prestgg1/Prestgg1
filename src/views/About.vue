@@ -41,7 +41,7 @@
 </template>
 <script setup>
 </script>
-<style scoped>
+<style>
 .box{
     height: 500px;
     width: 500px;

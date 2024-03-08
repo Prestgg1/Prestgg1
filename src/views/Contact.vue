@@ -1,6 +1,6 @@
 <script>
 import { useVuelidate } from '@vuelidate/core'
-import { required,minLength,helpers } from '@vuelidate/validators'
+import { required,minLength,email } from '@vuelidate/validators'
 import Background from '../components/Background.vue'
 export default {
   data(){
@@ -22,7 +22,7 @@ export default {
   },
   validations: {
     name: { required,minLength:minLength(5) },
-    email: { required:helpers.withMessage('Ya bu Alan Zorunlu',required) },
+    email: { required,email},
     description: { required },
   },
   methods:{
@@ -31,7 +31,7 @@ export default {
       if(this.v$.$errors.length==0){
         this.formconfig.Subject = `${this.v$.name.$model} Adında Bir Adam Yazdi`
         this.formconfig.Body = `Email:${this.v$.email.$model} Messaji: ${this.v$.description.$model}`
-        window.Email.send(this.formconfig).then((event)=>alert(event))
+        window.Email.send(this.formconfig).then(()=>alert())
       }
     }
   },
@@ -41,7 +41,7 @@ export default {
 <template>
     <div class="contact w-full h-full flex flex-col overflow-hidden bg-black">
         <div class="bg-[#12F3A6] p-4 flex justify-between animate__bounceInLeft animate__animated border-b-white border-b-2 border-dashed ">
-    <h1 class="text-white text-4xl font-serif">Contact Me</h1>
+    <h1 class="text-white text-4xl font-serif head">Contact Me</h1>
     <v-icon color="white" class="border-2 rounded-full p-4" size="x-large" icon="mdi-account"></v-icon>
         </div>
         <div class="flex flex-col w-full justify-center items-center h-full">

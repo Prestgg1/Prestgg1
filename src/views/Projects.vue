@@ -1,6 +1,6 @@
 <template>
         <div class="bg-[#12F3A6] p-4 flex justify-between animate__bounceInLeft animate__animated border-b-white border-b-2 border-dashed ">
-    <h1 class="text-white text-4xl font-serif">Projects</h1>
+    <h1 class="text-white text-4xl font-serif head">Projects</h1>
     <v-icon color="white" class=" p-4" size="x-large" icon="mdi-folder-multiple"></v-icon>
         </div>
 <div class="flex flex-wrap">

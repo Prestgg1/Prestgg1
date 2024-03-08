@@ -1,11 +1,11 @@
 <template>
     <Background></Background>
     <v-layout class="flex w-full h-full justify-center items-center">
-        <main class="flex flex-col w-1/2">
+        <main class="flex flex-col w-1/2 ">
             <h1 class="animate__animated animate__bounceInDown text-center text-4xl md:text-8xl p-4 text-white">I'm Prestgg <span class="overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white font-bold"></span> Developer</h1>
             <div class="animate__animated animate__bounceInUp flex justify-center">
                 
-                <v-btn variant="outlined" class="w-1/3 bg-black border-4 border-[#12F3A6] hover:scale-125 " @click="$router.push('/contact')"  >Hire Me</v-btn>
+                <v-btn variant="outlined" class="p-3 font-extralight  bg-black border-4 border-[#12F3A6] hover:scale-125 " @click="$router.push('/contact')"  >Hire Me</v-btn>
             </div>
         </main>
     </v-layout>
@@ -35,7 +35,7 @@ span.anime::after{
     position: absolute;
     height: 100%;
     width: calc(100% + 1px);
-    right: -0.01px;
+    right: 10px;
     top: 0;
     background: black;
     animation: blink 0.8s infinite,typin 15s infinite;
