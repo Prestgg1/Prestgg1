@@ -25,6 +25,19 @@ export default {
     </v-layout>
 </template>
 <style>
+
+
+.bana{
+    border: 1px solid #12F3A6;
+    color: #12F3A6;
+}
+.bana:hover{
+    background: #12F3A6;
+    color: white !important;
+}
+.head{
+    text-shadow: 2px 2px 2px #000;
+}
 @media (min-width:1000px) {
   .v-toolbar-title{
     flex: none !important;

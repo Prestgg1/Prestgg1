@@ -31,7 +31,7 @@ export default {
       if(this.v$.$errors.length==0){
         this.formconfig.Subject = `${this.v$.name.$model} Adında Bir Adam Yazdi`
         this.formconfig.Body = `Email:${this.v$.email.$model} Messaji: ${this.v$.description.$model}`
-        window.Email.send(this.formconfig).then(()=>alert())
+        window.Email.send(this.formconfig).then(()=>alert('Your Message has been sent'))
       }
     }
   },
@@ -81,10 +81,17 @@ export default {
   @blur="v$.description.$touch"
 >
 </v-textarea>
-<v-btn type="submit" class="bana" variant="outlined" :disabled="v$.$error">Submit</v-btn>
+<v-btn  type="submit" color="#12F3A6"  class="text-white font-extrabold"   :disabled="v$.$error">Submit</v-btn>
 </form>
         </div>
         
     </div>
   
 </template>
+<style scoped>
+.font-extrabold{
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-shadow: 3px 2px 5px black;
+}
+</style>
