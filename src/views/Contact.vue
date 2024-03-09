@@ -39,10 +39,13 @@ export default {
 }
 </script>
 <template>
-    <div class="contact w-full h-full flex flex-col overflow-hidden bg-black">
-        <div class="bg-[#12F3A6] p-4 flex justify-center animate__bounceInLeft animate__animated border-b-white border-b-2 border-dashed ">
+
+  <!-- Burası SubHeader -->
+    <div class="contact yansayfa w-full h-full flex flex-col overflow-hidden bg-black">
+        <div class="bg-[#12F3A6] p-4 flex justify-center animate__bounceInLeft animate__animated border-b-white ">
     <h1 class="text-white text-4xl font-serif head">Contact Me</h1>
         </div>
+        <!-- Burası Content -->
         <div class="flex flex-col w-full justify-center items-center h-full">
 <form ref="form" @submit.prevent="onformSubmit" class="p-10 w-full flex flex-col items-center gap-4 justify-center text-white">
 
@@ -56,6 +59,8 @@ export default {
   label="Name"
   @blur="v$.name.$touch"
 >
+
+
 </v-text-field>
 
 <v-text-field

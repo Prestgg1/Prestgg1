@@ -18,8 +18,9 @@ export default {
 <template>
     <v-layout class="h-full">
     
-   <Navbar/>
+
       <v-main>
+        <Navbar/>
         <RouterView></RouterView>
       </v-main>
     </v-layout>
