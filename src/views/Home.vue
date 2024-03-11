@@ -1,6 +1,6 @@
 <template>
     <Background></Background>
-    <v-layout class="flex w-full h-full justify-center items-center">
+    <v-layout class="flex w-full h-full justify-center items-center mainpage">
         <main class="flex flex-col w-1/2 ">
             <h1 class="animate__animated animate__bounceInDown text-center text-4xl md:text-8xl p-4 text-white">I'm Prestgg <span class="overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white font-bold"></span> Developer</h1>
             <div class="animate__animated animate__bounceInUp flex justify-center">
