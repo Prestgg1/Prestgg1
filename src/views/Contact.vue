@@ -1,6 +1,4 @@
 <script>
-import { useVuelidate } from '@vuelidate/core'
-import { required,minLength,email } from '@vuelidate/validators'
 import Background from '../components/Background.vue'
 export default {
   data(){
@@ -8,6 +6,22 @@ export default {
       name: '',
       email: '',
       description:'',
+      emailrules: [
+        value => !!value || 'Required.',
+        value => (value || '').length <= 20 || 'Max 20 characters',
+        value => {
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          return pattern.test(value) || 'Invalid e-mail.'
+        },
+      ],
+      namerules:[
+        value => !!value || "Required",
+        value => (value || '').length >= 5 || 'Minium 5 characters'
+      ],
+      desrules:[
+      value => !!value || "Required",
+        value => (value || '').length >= 20 || 'Minium 20 characters'
+      ],
       formconfig:{
           SecureToken:'9b0ca10e-8038-4731-9ad9-63907a38a106',
           To : 'prestgg56@gmail.com',
@@ -20,76 +34,76 @@ export default {
   components: {
     Background
   },
-  validations: {
-    name: { required,minLength:minLength(5) },
-    email: { required,email},
-    description: { required },
-  },
   methods:{
-     onformSubmit(){
-      this.v$.$touch()
-      if(this.v$.$errors.length==0){
-        this.formconfig.Subject = `${this.v$.name.$model} Adında Bir Adam Yazdi`
-        this.formconfig.Body = `Email:${this.v$.email.$model} Messaji: ${this.v$.description.$model}`
+     async onformSubmit(){
+      const { valid } = await this.$refs.form.validate()
+      if(valid){
+        this.formconfig.Subject = `${this.name} Adında Bir Adam Yazdi`
+        this.formconfig.Body = `Email:${this.email} Messaji: ${this.description}`
         window.Email.send(this.formconfig).then(()=>alert('Your Message has been sent'))
       }
     }
   },
-  setup: () => ({ v$: useVuelidate() })
 }
 </script>
 <template>
-
+<div class="w-100 h-100 d-flex flex-column align-center">
   <!-- Burası SubHeader -->
-    <div class="contact yansayfa w-full h-full flex flex-col overflow-hidden bg-black">
-        <div class="bg-[#12F3A6] p-4 flex justify-center animate__bounceInLeft animate__animated border-b-white ">
-    <h1 class="text-white text-4xl font-serif head">Contact Me</h1>
+  <div class="w-100 yansayfa d-flex flex-column overflow-hidden bg-black animate__bounceInLeft animate__animated">
+        <div class="bg-maincolor pa-4 d-flex justify-center">
+    <h1 class="text-white text-h4 head shadow-black animate__animated animate__fadeIn">Contact Me</h1>
         </div>
+    </div>
         <!-- Burası Content -->
-        <div class="flex flex-col w-full justify-center items-center h-full">
-<form ref="form" @submit.prevent="onformSubmit" class="p-10 w-full flex flex-col items-center gap-4 justify-center text-white">
-
-<v-text-field
+    <div class="d-flex w-100 h-100 justify-center align-center">
+      <v-form ref="form"  @submit.prevent="onformSubmit" class="pa-10 w-100 d-flex flex-column items-center ga-4 justify-center text-white">
+        <v-text-field
   hide-details="auto"
-  class="w-full"
+  class="w-100"
   name="name"
-  :error="v$.name.$dirty && v$.name.$invalid"
-  :error-messages="(v$.name.$dirty && v$.name.$invalid)? v$.name.$errors[0].$message : ''"
-  v-model="v$.name.$model"
+  :rules="namerules"
+  v-model="name"
+  rounded="lg"
+  required
   label="Name"
-  @blur="v$.name.$touch"
->
-
-
-</v-text-field>
-
+></v-text-field>
 <v-text-field
   hide-details="auto"
-  class="w-full"
+  class="w-100 "
+  rounded="lg"
+  required
   name="email"
-  :error="v$.email.$dirty && v$.email.$invalid"
-  :error-messages="(v$.email.$dirty && v$.email.$invalid)? v$.email.$errors[0].$message : ''"
-  v-model="v$.email.$model"
+  :rules="emailrules"
+  v-model="email"
   label="Email"
-  @blur="v$.email.$touch"
->
-</v-text-field>
+  
+/>
 <v-textarea
   hide-details="auto"
   name="message"
-  class="w-full"
-  :error="v$.description.$dirty && v$.description.$invalid"
-  :error-messages="(v$.description.$dirty && v$.description.$invalid)? v$.description.$errors[0].$message : ''"
-  v-model="v$.description.$model"
+  validation-on="input"
+  rounded="lg"
+  :rules="desrules"
+  class="w-100"
+  v-model="description"
+  clearable
+  
   label="Description"
-  @blur="v$.description.$touch"
->
-</v-textarea>
-<v-btn  type="submit" color="#12F3A6"  class="text-white font-extrabold"   :disabled="v$.$error">Submit</v-btn>
-</form>
-        </div>
-        
+/>
+
+<div class="d-flex justify-center"><v-btn type="submit" color="#12F3A6"  class="text-white font-extrabold"  >Submit</v-btn></div>
+<!-- 
+ -->
+
+</v-form>
+
     </div>
+
+        
+  </div>
+
+
+    
   
 </template>
 <style scoped>

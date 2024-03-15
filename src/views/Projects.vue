@@ -1,22 +1,17 @@
 <template>
-    <div class="bg-[#12F3A6] yansayfa p-4 flex justify-between animate__bounceInLeft animate__animated">
-    <h1 class="text-white text-4xl font-serif head">Projects</h1>
-    <v-icon color="white" class=" p-4" size="x-large" icon="mdi-folder-multiple"></v-icon>
+        <div class="w-100 yansayfa d-flex flex-column overflow-hidden bg-black animate__bounceInLeft animate__animated">
+        <div class="bg-maincolor pa-4 d-flex justify-space-between">
+    <h1 class="text-white text-h4 head shadow-black animate__animated animate__fadeIn">Projects</h1>
+    <v-icon color="white" class=" pa-4" size="x-large" icon="mdi-folder-multiple"></v-icon>
         </div>
+    </div>
+        <v-container class="fill-height   w-100">
+          <v-row align-content="center" justify="center" class="ga-16 ">
+            <project-vue v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
+            
+          </v-row>
+        </v-container>
 
-<div class="flex mt-5 items-center justify-center">
-  <div class="kapsayici grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-16 ">
-    <project-vue v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
-  <project-vue v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
-  <project-vue v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
-  </div>
-
-
-<!--   <div class="box text-white"><h1 class="z-20">Salam</h1></div>
-  <div class="box text-white"><h1 class="z-20">Salam</h1></div>
-  <div class="box text-white"><h1 class="z-20">Salam</h1></div>
-  <div class="box text-white"><h1 class="z-20">Salam</h1></div> -->
-</div>
 
 </template>
 <script>

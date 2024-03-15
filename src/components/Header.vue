@@ -2,42 +2,39 @@
      <v-app-bar
       class="appbar"
       >
-        <v-toolbar-title class="lg:hidden">
+        <v-toolbar-title class="d-lg-none">
           <template  v-slot:text>
-            <span @click="$router.push('/')" class="cursor-pointer text-[#12F3A6] text-2xl font-extrabold [text-shadow:_2px_2px_2px_black]">Prestgg</span>
+            <span @click="$router.push('/')" class="cursor-pointer text-maincolor font-weight-bold text-h5">Prestgg</span>
           </template>
         </v-toolbar-title>
-        <v-spacer class="lg:hidden"/>
-        <div class="flex items-center flex-row lg:hidden">
+        <v-spacer class="d-lg-none"/>
+        <div class="d-flex align-center flex-row d-lg-none">
           <v-app-bar-nav-icon v-if="!drawer" variant="text" color="white" @click.stop="scri"></v-app-bar-nav-icon>
           <v-btn v-else @click="drawer=!drawer"><v-icon color="white" icon="mdi-close"></v-icon></v-btn>
         </div>
-        <v-list class="hidden lg:flex bg-transparent overflow-hidden text-[#12F3A6]">
+        <v-list class="d-none d-lg-flex bg-transparent overflow-hidden text-maincolor">
   <v-list-item 
     v-for="n in items"
     :key="n"
-    color="teal-darken-4"
-    class="text-4xl"
-  ><v-btn class="animate__animated animate__fadeIn" @click="$router.push(n.to)" color="teal-accent-3"><v-icon class="p-4" :icon="n.icon"></v-icon>{{ n.title }}</v-btn> </v-list-item>
+    color="maincolor"
+  ><v-btn class="animate__animated animate__fadeIn" @click="$router.push(n.to)" color="maincolor"><v-icon class="pa-4" :icon="n.icon"></v-icon>{{ n.title }}</v-btn> </v-list-item>
 </v-list>
 
       </v-app-bar>
       <v-navigation-drawer
-      :class="drawer? '': 'hidden'"
-      class="bg-black  border-4 overflow-hidden border-white text-center"
+      class="bg-black border-4 overflow-hidden text-center"
         v-model="drawer"
         temporary
       >
-      <v-list class="h-full flex flex-col justify-center overflow-hidden">
+      <v-list class="h-100 d-flex flex-column justify-center overflow-hidden">
     <v-list-item
 
     v-for="n in items"
     :key="n"
-    color="teal-darken-4"
+    class="text-maincolor"
     v-ripple
-    style="color:#12F3A6"
     @click="$router.push(n.to)"
-  ><v-icon class="p-4" :icon="n.icon"></v-icon>{{ n.title }} </v-list-item>
+  ><v-icon class="pr-3" :icon="n.icon"></v-icon>{{ n.title }} </v-list-item>
   </v-list>
       </v-navigation-drawer>
 </template>

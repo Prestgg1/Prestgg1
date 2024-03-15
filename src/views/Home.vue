@@ -1,11 +1,11 @@
 <template>
     <Background></Background>
-    <v-layout class="flex w-full h-full justify-center items-center mainpage">
-        <main class="flex flex-col w-1/2 ">
-            <h1 class="animate__animated animate__bounceInDown text-center text-4xl md:text-8xl p-4 text-white">I'm Prestgg <span class="overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white font-bold"></span> Developer</h1>
-            <div class="animate__animated animate__bounceInUp flex justify-center">
+    <v-layout class="d-flex w-100 h-100 justify-center align-center mainpage">
+        <main class="d-flex flex-column  justify-center align-center">
+            <h1 class="animate__animated animate__bounceInDown text-center text-h4 text-md-h1 p-4 text-white w-50">I'm Prestgg <span class="font-weight-bold overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white "></span> Developer</h1>
+            <div class="animate__animated animate__bounceInUp d-flex justify-center">
                 
-                <v-btn variant="outlined" class="p-3 font-extralight  bg-black border-4  hover:scale-125 " @click="$router.push('/contact')" color="#12F3A6" >Hire Me</v-btn>
+                <v-btn size="x-large" variant="outlined"  class="rounded-lg p-3 mt-5 bg-black border-4 hire" @click="$router.push('/contact')">Hire Me</v-btn>
             </div>
         </main>
     </v-layout>
@@ -17,10 +17,16 @@
 import Background from '../components/Background.vue'
 </script>
 <style  scoped>
-.v-btn--variant-outlined{
-    border: 2px solid #12F3A6;
-    color: #12F3A6;
-    font-weight: 900;
+.hire{
+    border: 3px solid #12F3A6;
+    color: #12F3A6 !important;
+    transition: 250ms all;
+}
+.hire:hover{
+    background: #12F3A6 !important;
+    border: 3px solid white;
+    transition: 250ms all;
+    color: white !important;
 }
 
 span.anime{
