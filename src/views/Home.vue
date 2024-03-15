@@ -2,10 +2,10 @@
     <Background></Background>
     <v-layout class="d-flex w-100 h-100 justify-center align-center mainpage">
         <main class="d-flex flex-column  justify-center align-center">
-            <h1 class="animate__animated animate__bounceInDown text-center text-h4 text-md-h1 p-4 text-white w-50">I'm Prestgg <span class="font-weight-bold overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white "></span> Developer</h1>
+            <h1 class="animate__animated animate__bounceInDown text-center text-h4 text-sm-h2 text-md-h1 p-4 text-white w-50">I'm Prestgg <span class="font-weight-bold overflow-hidden whitespace-nowrap anime border-r-white pr-5 text-white "></span> Developer</h1>
             <div class="animate__animated animate__bounceInUp d-flex justify-center">
                 
-                <v-btn size="x-large" variant="outlined"  class="rounded-lg p-3 mt-5 bg-black border-4 hire" @click="$router.push('/contact')">Hire Me</v-btn>
+                <v-btn size="large"  variant="outlined"  class="rounded-lg p-3 mt-5 bg-black border-4 hire" @click="$router.push('/contact')">Hire Me</v-btn>
             </div>
         </main>
     </v-layout>
@@ -26,6 +26,7 @@ import Background from '../components/Background.vue'
     background: #12F3A6 !important;
     border: 3px solid white;
     transition: 250ms all;
+    font-weight: bold;
     color: white !important;
 }
 

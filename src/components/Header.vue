@@ -25,8 +25,9 @@
       class="bg-black border-4 overflow-hidden text-center"
         v-model="drawer"
         temporary
+        location="top"
       >
-      <v-list class="h-100 d-flex flex-column justify-center overflow-hidden">
+      <v-list :class="drawer? 'd-flex' : 'd-none'" class="h-100 flex-column justify-center overflow-hidden">
     <v-list-item
 
     v-for="n in items"
