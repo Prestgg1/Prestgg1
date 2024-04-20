@@ -22,20 +22,29 @@ import Portfolio from '../assets/img/portfoliocreater.png'
     data(){
       return{
         projectList:[
-          {
+        {
             id:1,
+            title:'MYKD',
+            subtitle:'Using Html CSS Javascript',
+            image:'https://themedox.com/demo/mykd-preview/assets/img/images/home_01.jpg',
+            url:'https://prestgg1.github.io/MYKD/'
+          },
+          {
+            id:2,
             title:'PortFolioCreater',
             subtitle:'Using Html CSS',
             image:Portfolio,
             url:'https://prestgg1.github.io/PortfolioCreator/'
           },
           {
-            id:2,
+            id:3,
             title:'Artifical',
-            subtitle:'Using Html CSS Javascript',
+            subtitle:'Using Html CSS',
             image:Artifical,
             url:'https://prestgg1.github.io/Artificial-Intelligence/'
-          }
+          },
+
+
         ]
       }
     },

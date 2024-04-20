@@ -26,7 +26,7 @@
     <template v-slot:text>
       <span class="text-white d-flex flex-column ga-2">
         <p>{{ text }}</p>
-        <img :src="image" alt="" class="rounded-md w-100 h-40 object-fill">
+        <img :src="image" :alt="text" class="rounded-md w-100 " style="object-fit: fill; height: 200px;">
       </span>
     </template>
 </v-card>
