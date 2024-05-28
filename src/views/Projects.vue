@@ -7,7 +7,9 @@
     </div>
         <v-container class="fill-height   w-100">
           <v-row align-content="center" justify="center" class="ga-16 ">
-            <project-vue v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
+            <v-progress-circular v-if="loading" color="#12F3A6" indeterminate :size="128"></v-progress-circular>
+
+            <project-vue v-else v-for="item in projectList" :key="item.id" :title="item.title" :subtitle="item.subtitle" :url="item.url" :image="item.image"></project-vue>
             
           </v-row>
         </v-container>
@@ -15,37 +17,24 @@
 
 </template>
 <script>
-import ProjectVue from '../components/Project.vue'
-import Artifical from '../assets/img/altifical.png'
-import Portfolio from '../assets/img/portfoliocreater.png'
+import ProjectVue from '../components/Project.vue';
+import axios from 'axios';
   export default {
     data(){
       return{
         projectList:[
-        {
-            id:1,
-            title:'MYKD',
-            subtitle:'Using Html CSS Javascript',
-            image:'https://themedox.com/demo/mykd-preview/assets/img/images/home_01.jpg',
-            url:'https://prestgg1.github.io/MYKD/'
-          },
-          {
-            id:2,
-            title:'PortFolioCreater',
-            subtitle:'Using Html CSS',
-            image:Portfolio,
-            url:'https://prestgg1.github.io/PortfolioCreator/'
-          },
-          {
-            id:3,
-            title:'Artifical',
-            subtitle:'Using Html CSS',
-            image:Artifical,
-            url:'https://prestgg1.github.io/Artificial-Intelligence/'
-          },
-
-
-        ]
+        ],
+        loading:true
+      }
+    },
+    mounted(){
+      this.getProjectList();
+    },
+    methods:{
+      async getProjectList(){
+        const response = await axios.get('https://faux-api.com/api/v1/projectlist_9744218644067304')
+        this.loading = false;
+        this.projectList = response.data.result
       }
     },
     components:{ProjectVue}
