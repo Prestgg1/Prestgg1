@@ -9,7 +9,6 @@
        >
        <template v-slot:activator>
 
-
         <v-card
         @click="dialog=true"
     class=" text-white  rounded-lg"
@@ -25,7 +24,6 @@
     </template>
     <template v-slot:text>
       <span class="text-white d-flex flex-column ga-2">
-        <p>{{ title }}</p>
         <img :src="image" :alt="title" class="rounded-md w-100 " style="object-fit: cover; height: 200px;">
       </span>
     </template>
@@ -49,9 +47,6 @@
 </div>
 
 </v-col>
-
-
-
    </template>
    <script>
      export default {
@@ -60,7 +55,7 @@
            dialog: false,
          }
        },
-       props:['title','subtitle','image','url']
+       props:['title','subtitle','image','url'],
      }
    </script>
 <style>
