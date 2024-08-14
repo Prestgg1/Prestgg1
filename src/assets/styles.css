@@ -10,15 +10,18 @@ body{
       height: 100%;
   }
   }
-  
+
   .headicon{
         border: 2px solid white;
         border-radius: 50%;
         padding: 15px;
   }
   html,body,#app{
-    height: 100%;
+    height:100%;
     width: 100%;
+  }
+  html{
+    overflow: auto !important;
   }
   body{
     background: #000;

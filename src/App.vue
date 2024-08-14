@@ -17,7 +17,7 @@ export default {
 
 <template>
     <v-layout class="h-100">
-      <v-main >
+      <v-main class="d-flex flex-column" >
         <Navbar/>
         <RouterView></RouterView>
       </v-main>

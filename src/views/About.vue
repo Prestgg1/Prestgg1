@@ -6,12 +6,10 @@
         </div>
     </div>
 
-
     <div class="about w-100 d-flex flex-column justify-center align-center animate__animated animate__fadeIn">
         <h1 class="font-serif text-h4 font-weight-bold mt-2 text-maincolor">Front end Developer</h1>
         <div class="content d-flex flex-column flex-md-row justify-center align-center ga-2 pa-5">
-            <p class="max-w-4xl text-h6 text-md-h5 text-white">I am very enthusiastic and excited to work as a young person who has never worked in this field before. As a 18-year-old young man, I love using computers from a young age. I know how to use the programs on the computer faster and more efficiently. I like socialising and establishing a healthy communication. In this way, I believe that I will get
-            along very well with my teammates and I want to prove it.</p>
+            <p class="max-w-4xl text-h6 text-md-h5 text-white"> As a passionate and driven {{new Date().getFullYear()-2005}}-year-old, I am eager to embark on a career in this field, despite my lack of professional experience. My enthusiasm for technology started at a young age, leading me to develop strong skills in efficiently using various software and tools. I thrive in collaborative environments, enjoy socializing, and believe that my ability to communicate effectively will allow me to seamlessly integrate into any team. I am excited to contribute and prove my abilities in a professional setting.</p>
             <v-btn class="cvbtn"  variant="outlined" href="../MyCv.pdf" download >Download CV</v-btn>
         </div>
         <table class="mt-2 text-white">
@@ -22,7 +20,7 @@
             </tr>
             <tr>
                 <th>Age:</th>
-                <td>18</td>
+                <td>{{new Date().getFullYear()-2005}}</td>
             </tr>
             <tr>
                 <th>Adress:</th>
