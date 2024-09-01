@@ -4,7 +4,7 @@
 
 - 🌱 I’m currently learning **React,Vue,Nextjs,PhP**
 
-- All of my projects are available at [https://prestgg.tic.tc](https://prestgg.tic.tc)
+- All of my projects are available at [https://prestgg.netlify.app](https://prestgg.netlify.app)
 
 - 📫 How to reach me **prestgg56@gmail.com**
 
