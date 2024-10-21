@@ -5,7 +5,7 @@
     <v-icon color="white" class=" pa-4" size="x-large" icon="mdi-folder-multiple"></v-icon>
         </div>
     </div>
-        <v-container class="fill-height   w-100">
+        <v-container class="fill-height  w-100">
           <v-row align-content="center" justify="center" class="ga-16 ">
             <v-progress-circular v-if="loading" color="#12F3A6" indeterminate :size="128"></v-progress-circular>
 

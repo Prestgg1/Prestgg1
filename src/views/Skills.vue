@@ -42,7 +42,7 @@
                 <span class="headline">NextJs</span>
             </v-card-title>
             <v-card-text>
-                <v-progress-linear class="text-white" model-value="60" height="20" color="yeloow" ></v-progress-linear>
+                <v-progress-linear class="text-white" model-value="60" height="20" color="yellow" ></v-progress-linear>
             </v-card-text>
         </v-card>
                 </v-col>

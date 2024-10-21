@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <th>Age:</th>
-                <td>{{new Date().getFullYear()-2005}}</td>
+                <td>{{myAge}}</td>
             </tr>
             <tr>
                 <th>Adress:</th>
@@ -38,4 +38,5 @@
     </div>
 </template>
 <script setup>
+  const myAge = new Date().getFullYear()-2005
 </script>
