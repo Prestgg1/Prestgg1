@@ -34,7 +34,15 @@
                 <span class="headline">React</span>
             </v-card-title>
             <v-card-text>
-                <v-progress-linear class="text-white" model-value="30" height="20" color="red" ></v-progress-linear>
+                <v-progress-linear class="text-white" model-value="80" height="20" color="green" ></v-progress-linear>
+            </v-card-text>
+        </v-card>
+              <v-card class="mx-auto vcard" variant="outlined">
+            <v-card-title>
+                <span class="headline">NextJs</span>
+            </v-card-title>
+            <v-card-text>
+                <v-progress-linear class="text-white" model-value="60" height="20" color="yeloow" ></v-progress-linear>
             </v-card-text>
         </v-card>
                 </v-col>
