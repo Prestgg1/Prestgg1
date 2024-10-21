@@ -1,0 +1,100 @@
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black
+ }
+ .font-serif {
+    font-family: serif;
+  }
+  @media (min-width:700px) {
+    .about{
+      height: 100%;
+  }
+  }
+
+  .headicon{
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 15px;
+  }
+  html,body,#app{
+    height:100%;
+    width: 100%;
+  }
+  html{
+    overflow: auto !important;
+  }
+  body{
+    background: #000;
+  }
+  
+  .bana{
+      border: 1px solid #12F3A6;
+      color: #12F3A6;
+  }
+  .bana:hover{
+      background: #12F3A6;
+      color: white !important;
+  }
+  .head{
+      text-shadow: 2px 2px 2px #000;
+  }
+  @media (min-width:1000px) {
+    .v-toolbar-title{
+      flex: none !important;
+    }
+    .v-toolbar__content{
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+.max-w-4xl{
+    max-width: 800px;
+}
+.cvbtn{
+
+    color: #12F3A6 !important;
+    border: 2px solid #12F3A6 !important;
+}
+.cvbtn:hover{
+    background-color: #12F3A6;
+    color: white !important;
+}
+.box{
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    transition: 250ms ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: black;
+    overflow: hidden;
+  }
+  .box::after{
+    content:'';
+    position: absolute;
+    background: black;
+    inset:8px;
+    border-radius: 16px;
+  }
+  .box::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 160%;
+    border-radius: 20px;
+    background: linear-gradient(#12F3A6,orange);
+    animation: rotate 4s linear infinite;
+  }
+  @keyframes rotate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+.z-20{
+    z-index:20;
+}
