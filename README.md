@@ -2,8 +2,6 @@
 <h1 align="center">Hi 👋, I'm Prestgg</h1>
 <h3 align="center">A passionate frontend developer from Azerbaijan</h3>
 
-- 🌱 I’m currently learning **React,Vue,Nextjs,PhP**
-
 - All of my projects are available at [https://prestgg.netlify.app](https://prestgg.netlify.app)
 
 - 📫 How to reach me **prestgg56@gmail.com**
