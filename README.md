@@ -1,6 +1,6 @@
 :[![MasterHead](https://i.imgur.com/QygGNyr.png)
 <h1 align="center">Hi 👋, I'm Prestgg</h1>
-<h3 align="center">A passionate frontend developer from Azerbaijan</h3>
+<h3 align="center">A passionate fullstack developer from Azerbaijan</h3>
 
 - All of my projects are available at [https://prestgg.netlify.app](https://prestgg.netlify.app)
 
