@@ -29,13 +29,13 @@
 
 | Category | Tools |
 |---------|-------|
-| **Languages** | Rust, PHP, JavaScript, TypeScript, HTML, CSS, SQL |
-| **Frontend** | Svelte, Vue.js, Nuxt.js, React, Astro, Tailwind CSS, Bootstrap |
+| **Languages** | Rust, PHP, JavaScript, TypeScript |
+| **Frontend** | Svelte, Vue.js, Nuxt.js, React, Astro, Tailwind CSS |
 | **Backend** | Laravel, Node.js, Hono.js |
 | **CMS** | WordPress |
-| **Databases** | MySQL |
-| **Tools** | Git, Linux, Bash, Vercel, Netlify |
-| **Other** | Zig (exploring), C (basic), OpenAPI, REST, Docker (learning) |
+| **Databases** | MySQL, POSTRESQL, LIBSQL, TURSO |
+| **Tools** | Git, Linux, Bash, Vercel, Netlify, Cloudflare |
+| **Other** | Zig (exploring),TRPC, OpenAPI, REST, Docker (learning) |
 
 ---
 
