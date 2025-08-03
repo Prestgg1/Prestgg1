@@ -1,4 +1,4 @@
-![Header](https://i.imgur.com/QygGNyr.png)
+![Header]([https://i.imgur.com/QygGNyr.png](https://user-images.githubusercontent.com/74038190/212749695-a6817c5a-a794-462b-afca-1b5ce7dd5e63.gif)
 
 <h1 align="center">Hi 👋, I'm Prestgg (Sabuhi Sariyev)</h1>
 <h3 align="center">🇦🇿 Fullstack Developer • Language Creator • Startup Builder</h3>
