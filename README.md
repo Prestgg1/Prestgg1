@@ -26,7 +26,12 @@
 [![Email](https://img.shields.io/badge/Email-prestgg56@gmail.com-%230077B5?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prestgg56@gmail.com)
 
 ---
+---
 
+![](https://actdoor.onrender.com/api/getActivity/Prestgg1?type=github&theme=dark)
+
+
+---
 ## 🛠️ Tech Stack
 
 | Category | Tools |
