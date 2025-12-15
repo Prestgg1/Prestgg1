@@ -42,7 +42,7 @@
 | **CMS** | WordPress |
 | **Databases** | MySQL, POSTRESQL, LIBSQL, TURSO |
 | **Tools** | Git, Linux, Bash, Vercel, Netlify, Cloudflare |
-| **Other** | Zig (exploring),TRPC, OpenAPI, REST, Docker (learning) |
+| **Other** | Zig (exploring),TRPC, OpenAPI, REST, Caddy |
 
 ---
 
