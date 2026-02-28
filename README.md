@@ -46,18 +46,6 @@
 
 ---
 
-## 🔧 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prestgg1&show_icons=true&theme=default" alt="GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=prestgg1" alt="GitHub Streak" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=prestgg1&layout=compact" alt="Top Languages" />
-</p>
-
----
-
 ## 📢 Fun Fact
 
 > I'm building a programming language as a solo developer from Azerbaijan 🇦🇿 – aiming to build tools that improve how people learn and use programming.
